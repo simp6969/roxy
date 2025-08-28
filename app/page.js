@@ -3,7 +3,7 @@ import { Header } from "./components/Header";
 
 export default function LangingPage() {
   return (
-    <div className="w-full min-h-screen pt-[20px] flex justify-center items-center">
+    <div className="w-[100dvw] h-[100dvh] overflow-hidden pt-[20px] flex justify-center items-center">
       <div className="max-w-screen-xl w-full h-full flex justify-between items-center flex-col px-4">
         <Header />
         <div className="w-full flex justify-center items-center gap-[10px] sm:gap-[30px] flex-col sm:flex-row">
