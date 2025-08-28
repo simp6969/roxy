@@ -3,17 +3,17 @@ import { Header } from "./components/Header";
 
 export default function LangingPage() {
   return (
-    <div className="w-[100vw] h-[100vh] pt-[20px] flex justify-center items-center">
-      <div className="w-[920px] h-[100%] flex justify-between items-center flex-col">
+    <div className="w-full min-h-screen pt-[20px] flex justify-center items-center">
+      <div className="max-w-screen-xl w-full h-full flex justify-between items-center flex-col px-4">
         <Header />
-        <div className="w-[100%] flex justify-center items-center gap-[30px]">
-          <h1 className="leftHeaderText">GODDESS</h1>
-          <h1>ROXY M.GREYRAT</h1>
-          <h1 className="rightHeaderText">SHISHOU</h1>
+        <div className="w-full flex justify-center items-center gap-[10px] sm:gap-[30px] flex-col sm:flex-row">
+          <h1 className="leftHeaderText text-2xl sm:text-[26px]">GODDESS</h1>
+          <h1 className="text-center text-xl sm:text-[26px]">ROXY M.GREYRAT</h1>
+          <h1 className="rightHeaderText text-2xl sm:text-[26px]">SHISHOU</h1>
         </div>
         <div className="mainImage">
           <Image
-            className=""
+            className="w-full h-auto max-w-[500px]"
             alt="Full body portrait of Roxy Migurdia from Mushoku Tensei"
             src="/roxy.png"
             height="300"
@@ -22,19 +22,23 @@ export default function LangingPage() {
         </div>
         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[var(--primary-bg-color)] to-50%"></div>
       </div>
-      <div className="absolute z-[-1] flex flex-col w-[920px] bottom-[30px] justify-center items-center ">
-        <p className="text-[520px] main mainText">ROXY</p>
-        <div className="w-[715px] flex justify-between">
-          <div className="w-[350px]">
-            <article className="leading-4 text-[14px] font-medium mainText">
-              Roxy is shown as a short statured adult woman in her physical
-              teenage appearance between 15 or 16 years old. Her complexion is
-              like sand but paler, and has long blue hair tied in 2 braids that
-              reach below her waist. Her eyes match the color of her hair. Her
-              hair color sometimes appears green in sunlight, which makes people
-              distrustful or even afraid of her because of the similarity
-              between her and the Superd Tribe&apos;s green hair.
-            </article>
+      <div className="absolute z-[-1] flex flex-col w-full bottom-[30px] px-4 justify-center items-center">
+        <p className="text-[120px] sm:text-[300px] md:text-[520px] main mainText">
+          ROXY
+        </p>
+        <div className="w-full flex justify-between px-4">
+          <div className="max-w-[715px] w-full flex justify-end mx-auto sm:justify-between">
+            <div className="w-full sm:w-[350px]">
+              <article className="leading-4 text-[12px] sm:text-[14px] font-medium mainText text-center sm:text-left">
+                Roxy is shown as a short statured adult woman in her physical
+                teenage appearance between 15 or 16 years old. Her complexion is
+                like sand but paler, and has long blue hair tied in 2 braids
+                that reach below her waist. Her eyes match the color of her
+                hair. Her hair color sometimes appears green in sunlight, which
+                makes people distrustful or even afraid of her because of the
+                similarity between her and the Superd Tribe&apos;s green hair.
+              </article>
+            </div>
           </div>
         </div>
       </div>
